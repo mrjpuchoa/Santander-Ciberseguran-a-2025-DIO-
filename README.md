@@ -22,4 +22,9 @@ Para a segunda questão, realizei um escaner da porta 10000 até a 11000 para ve
 
 <img width="667" height="216" alt="image" src="https://github.com/user-attachments/assets/ca032631-3a81-4daf-b78b-67b5309a615c" />
 
-Próximo passo é descobrir as flags escondidas, umas delas está no cabeçário do servidor HTTP do alvo, para encontrá-la eu fiz uma requisição HTTP através do telnet na porta 80 que é a porta padrão do protocolo HTTP, a outra flag está no cabeçário do servidor SSH, para encontrá-la eu usei o argumento -sV no nmap para enumerar os serviços e suas versões, isso foi o suficiente. Também foi citado que há um serviço FTP rodando em uma porta não padrão, por padrão a porta do protocolo FTP é a porta 21, 
+Próximo passo é descobrir as flags escondidas, umas delas está no cabeçário do servidor HTTP do alvo, para encontrá-la eu fiz uma requisição HTTP através do telnet na porta 80 que é a porta padrão do protocolo HTTP, a outra flag está no cabeçário do servidor SSH, para encontrá-la eu usei o argumento -sV no nmap para enumerar os serviços e suas versões, isso foi o suficiente. Também foi citado que há um serviço FTP escutando em uma porta não padrão, por padrão a porta do protocolo FTP é a porta 21, e nos meus scans não foi detectado nenhum serviço FTP, mas lembra daquela porta 10021 com um serviço desconhecido, resolvi scaneá-la novamente para enumerar a versão do serviço e descobrir um pouco mais sobre o que está nesta porta, e acontece que é exatamente o serviço FTP. Assim pude resolver mais 3 questões do desafio que consiste em capturar duas flags e a versão do servidor FTP.
+
+<img width="678" height="497" alt="image" src="https://github.com/user-attachments/assets/66858df1-3d25-4ed9-bd02-192a70c083f1" />
+<img width="1044" height="246" alt="image" src="https://github.com/user-attachments/assets/15f8ac8e-6a00-4286-8397-05433c000388" />
+<img width="951" height="234" alt="11" src="https://github.com/user-attachments/assets/a1e015d7-5d60-4ec7-b47b-917f86989ccb" />
+
