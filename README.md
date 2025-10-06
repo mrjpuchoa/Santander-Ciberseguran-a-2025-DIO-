@@ -1,4 +1,4 @@
-# Santander-Ciberseguran-a-2025-DIO-
+# Santander Cibersegurança 2025 (DIO)
 Este repositório tem o intuito de apresentar os desafios propostos pelo bootcamp
 
 https://tryhackme.com/room/netsecchallenge?sharerId=6824bf6acd0a5c2008dfd0ca
