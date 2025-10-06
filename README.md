@@ -29,7 +29,7 @@ Próximo passo é descobrir as flags escondidas, umas delas está no cabeçário
 <img width="1044" height="246" alt="image" src="https://github.com/user-attachments/assets/15f8ac8e-6a00-4286-8397-05433c000388" />
 <img width="951" height="234" alt="11" src="https://github.com/user-attachments/assets/a1e015d7-5d60-4ec7-b47b-917f86989ccb" />
 
-O objetivo agora é fazer o brute force no serviço FTP, para isso usei a ferramenta Hydra, utilizei a tão famosa wordlist 'rockyou.txt'. o Desafio já me deu dois usernames 'eddie' e 'quinn', pra fazer o brute force utilizei o seguinte comando: hydra -l eddie -P /usr/share/wordlists/rockyou. txt -s 10021 ftp://10. 201. 126. 254
-Como o FTP não está rodando na porta padrão, é necessário usar o argumento -s [porta]
+O objetivo agora é fazer o brute force no serviço FTP, para isso usei a ferramenta Hydra, utilizei a tão famosa wordlist 'rockyou.txt' que possui mais de 14 milhôes de senhas. o Desafio já suponha hipoteticamente que conseguiu dois usernames 'eddie' e 'quinn' por meio de engenharia social, os quais serão os alvos, para fazer o brute force utilizei o seguinte comando: hydra -l eddie -P /usr/share/wordlists/rockyou. txt -s 10021 ftp://10. 201. 126. 254
+Como o FTP não está rodando na porta padrão, é necessário usar o argumento -s [porta 10021] que é a porta não padrão que foi descoberta rodando o serviço FTP.
 
 <img width="1280" height="220" alt="06" src="https://github.com/user-attachments/assets/0298e8cc-42f6-44c7-8843-2f06af72555d" />
