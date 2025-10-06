@@ -14,4 +14,4 @@ A primeira pergunta: Qual a porta mais alta que está aberta antes da porta 1000
 Fiz um scaner desde a porta 1 até a 10000 utilizando os argumentos como na imagem.
 Resposta é porta 8080.
 <img width="670" height="320" alt="image" src="https://github.com/user-attachments/assets/82c5613c-05da-4a66-9b4e-73c3e34df390" />
-Para a segunda questão, realizei um escaner da porta 10000 até a 11000 para ver se seria o suficiente para encontrar a porta aberta que não está nas 1.000 portas comuns e que se encontrava acima da porta 10.000. Bingo! A resposta é a porta 10021
+Para a segunda questão, realizei um escaner da porta 10000 até a 11000 para ver se seria o suficiente para encontrar a porta aberta que não está nas 1.000 portas comuns e que se encontrava acima da porta 10.000. Bingo! A resposta é a porta 10021. E na terceira questão a resposta é 6 portas estão abertas no ip alvo
