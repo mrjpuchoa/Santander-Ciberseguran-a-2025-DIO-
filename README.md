@@ -1,8 +1,6 @@
 # Santander Cibersegurança 2025 (DIO)
 Este repositório tem o intuito de apresentar os desafios propostos pelo bootcamp
 
-https://tryhackme.com/room/netsecchallenge?sharerId=6824bf6acd0a5c2008dfd0ca
-
 Para o desafio eu escolhi realizar um challenge na plataforma TryHackMe.com. Já sou usuário premium e estudo segurança ofensiva há algum tempo por meio da plataforma. Este desafio consiste em um capture the flag (CTF), no qual testa técnicas como enumeração e reconhecimento de portas usando a ferramenta nmap, realizar testes de invasão em um serviço de protocolo FTP através de força bruta (utilizei a ferramenta Hydra para o brute force) e utilização do telnet para requisições HTTP. Obs.: Resetei a máquina do desafio algumas vezes devido a problemas técnicos, o que provocou a mudança de ip do alvo algumas vezes, mas isso não atrapalha a conclusão do desafio.
 
 <img width="812" height="465" alt="01" src="https://github.com/user-attachments/assets/dfba3844-dff1-45a4-a84d-1a6337abfe44" />
@@ -33,3 +31,28 @@ O objetivo agora é fazer o brute force no serviço FTP, para isso usei a ferram
 Como o FTP não está rodando na porta padrão, é necessário usar o argumento -s [porta 10021] que é a porta não padrão que foi descoberta rodando o serviço FTP.
 
 <img width="1280" height="220" alt="06" src="https://github.com/user-attachments/assets/0298e8cc-42f6-44c7-8843-2f06af72555d" />
+<img width="1040" height="232" alt="image" src="https://github.com/user-attachments/assets/6e7449a7-b6a1-4890-8d21-63c9acfa3ce1" />
+<img width="1062" height="272" alt="13" src="https://github.com/user-attachments/assets/3f2e769a-cdcf-4c1d-be6a-c465b6589c1f" />
+
+Com as senhas, apenas precisei entrar com ambos usuários e senhas no serviço FTP e encontrar a flag para concluir mais uma questão. A  flag estava no usuário 'quinn', listei os aqruivos e pasta com o comando 'ls' e lá estava o arquivo com a flag, usei o comando get [arquivo] para baixar o arquivo no meu desktop, então dentro do próprio servidor FTP eu posso usar o comando !cat [arquivo que foi baixado] para conseguir exibir a flag, vale ressaltar que o símbolo '!' auxilia para que eu possa injetar comandos no meu shell local, dessa forma estarei interagindo no meu shell local sem precisar deslogar da minha sessão no serviço FTP.
+
+<img width="491" height="309" alt="14" src="https://github.com/user-attachments/assets/d16b610d-161d-471f-9242-51264a9cab14" />
+<img width="696" height="314" alt="image" src="https://github.com/user-attachments/assets/46f8b272-829c-438c-8997-adf387939309" />
+<img width="1039" height="479" alt="image" src="https://github.com/user-attachments/assets/d83c7ba6-dc45-4849-bfc6-921d667bd73a" />
+
+O último desafio foi fazer um scanner altamente furtivo que não pudesse ser identificado pelo sistema IDS. Precisei apenas usar o nmap com o seguinte comando 'nmap sN [ip do alvo].
+Este argumento -sN é um Null, consiste em não usar nenhuma flag no scanner. Contudo a falta de resposta do servidor pode indicar que as devidas portas estão abertas ou que o IDS ésta bloqueando os pacotes.
+
+<img width="680" height="329" alt="17" src="https://github.com/user-attachments/assets/db3ce815-5388-4b4e-998e-849ad00c8ea4" />
+<img width="571" height="388" alt="18" src="https://github.com/user-attachments/assets/656a7159-95ff-4b68-b4bc-8b432a915329" />
+
+Então consegui garantir a última flag para concluir o desafio. Todas as questões realizadas, deixarei no final o link do meu desafio concluído.
+
+<img width="1272" height="851" alt="19" src="https://github.com/user-attachments/assets/9f149222-8b35-4dcf-ae02-dc0459109aad" />
+<img width="988" height="619" alt="20" src="https://github.com/user-attachments/assets/01a38787-8e18-44b6-a37c-cf67ec597118" />
+
+https://tryhackme.com/room/netsecchallenge?sharerId=6824bf6acd0a5c2008dfd0ca
+
+
+
+
