@@ -13,7 +13,7 @@ A primeira pergunta: Qual a porta mais alta que está aberta antes da porta 1000
 
 <img width="1310" height="500" alt="04" src="https://github.com/user-attachments/assets/7d8d01f7-9557-4009-939a-bd90f075a96d" />
 
-Fiz um scaner desde a porta 1 até a 10000 utilizando os argumentos como na imagem.
+Fiz um scaner desde a porta 1 até a 10000 utilizando como mostra na imagem.
 Resposta é porta 8080.
 
 <img width="670" height="320" alt="image" src="https://github.com/user-attachments/assets/82c5613c-05da-4a66-9b4e-73c3e34df390" />
@@ -24,10 +24,12 @@ Para a segunda questão, realizei um escaner da porta 10000 até a 11000 para ve
 
 Próximo passo é descobrir as flags escondidas, umas delas está no cabeçário do servidor HTTP do alvo, para encontrá-la eu fiz uma requisição HTTP através do telnet na porta 80 que é a porta padrão do protocolo HTTP, a outra flag está no cabeçário do servidor SSH, para encontrá-la eu usei o argumento -sV no nmap para enumerar os serviços e suas versões, isso foi o suficiente. Também foi citado que há um serviço FTP escutando em uma porta não padrão, por padrão a porta do protocolo FTP é a porta 21, e nos meus scans não foi detectado nenhum serviço FTP, mas lembra daquela porta 10021 com um serviço desconhecido, resolvi scaneá-la novamente para enumerar a versão do serviço e descobrir um pouco mais sobre o que está nesta porta, e acontece que é exatamente o serviço FTP. Assim pude resolver mais 3 questões do desafio que consiste em capturar duas flags e a versão do servidor FTP.
 
+<img width="1273" height="318" alt="05" src="https://github.com/user-attachments/assets/7d46cd15-7439-49f8-97cc-9df4d545752b" />
 <img width="678" height="497" alt="image" src="https://github.com/user-attachments/assets/66858df1-3d25-4ed9-bd02-192a70c083f1" />
 <img width="1044" height="246" alt="image" src="https://github.com/user-attachments/assets/15f8ac8e-6a00-4286-8397-05433c000388" />
 <img width="951" height="234" alt="11" src="https://github.com/user-attachments/assets/a1e015d7-5d60-4ec7-b47b-917f86989ccb" />
 
 O objetivo agora é fazer o brute force no serviço FTP, para isso usei a ferramenta Hydra, utilizei a tão famosa wordlist 'rockyou.txt'. o Desafio já me deu dois usernames 'eddie' e 'quinn', pra fazer o brute force utilizei o seguinte comando: hydra -l eddie -P /usr/share/wordlists/rockyou. txt -s 10021 ftp://10. 201. 126. 254
 Como o FTP não está rodando na porta padrão, é necessário usar o argumento -s [porta]
+
 <img width="1280" height="220" alt="06" src="https://github.com/user-attachments/assets/0298e8cc-42f6-44c7-8843-2f06af72555d" />
