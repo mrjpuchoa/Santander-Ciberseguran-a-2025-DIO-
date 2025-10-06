@@ -31,6 +31,7 @@ Também foi identificado um serviço FTP rodando em porta não padrão. Por padr
 O objetivo seguinte foi fazer brute force no serviço FTP. Utilizei Hydra e a wordlist rockyou.txt (mais de 14 milhões de senhas). O desafio já pressupunha que eu havia obtido, por engenharia social, dois usernames: eddie e quinn — estes foram os alvos do ataque de força bruta. O comando utilizado foi:
 
 hydra -l eddie -P /usr/share/wordlists/rockyou.txt -s 10021 ftp://10.201.126.254
+
 hydra -l quinn -P /usr/share/wordlists/rockyou.txt -s 10021 ftp://10.201.126.254
 
 Como o FTP não estava na porta padrão, foi necessário usar o argumento -s 10021 para especificar a porta descoberta.
