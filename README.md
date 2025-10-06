@@ -56,8 +56,11 @@ Com isso, garanti a última flag e concluí o desafio. Todas as respostas e evid
 <img width="1272" height="851" alt="19" src="https://github.com/user-attachments/assets/9f149222-8b35-4dcf-ae02-dc0459109aad" />
 <img width="988" height="619" alt="20" src="https://github.com/user-attachments/assets/01a38787-8e18-44b6-a37c-cf67ec597118" />
 
+Link do desafio:
 https://tryhackme.com/room/netsecchallenge?sharerId=6824bf6acd0a5c2008dfd0ca
 
+Para quem desejar acompanhar meu progresso na plataforma THM:
+https://tryhackme.com/p/untitled.txt
 
 
 
