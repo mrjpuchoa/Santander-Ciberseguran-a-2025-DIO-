@@ -22,5 +22,4 @@ Para a segunda questão, realizei um escaner da porta 10000 até a 11000 para ve
 
 <img width="667" height="216" alt="image" src="https://github.com/user-attachments/assets/ca032631-3a81-4daf-b78b-67b5309a615c" />
 
-
-
+Próximo passo é descobrir as flags escondidas, umas delas está no cabeçário do servidor HTTP do alvo, para encontrá-la eu fiz uma requisição HTTP através do telnet na porta 80 que é a porta padrão do protocolo HTTP, a outra flag está no cabeçário do servidor SSH, para encontrá-la eu usei o argumento -sV no nmap para enumerar os serviços e suas versões, isso foi o suficiente. Também foi citado que há um serviço FTP rodando em uma porta não padrão, por padrão a porta do protocolo FTP é a porta 21, 
