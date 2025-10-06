@@ -1,7 +1,7 @@
 # Santander Cibersegurança 2025 (DIO)
 Este repositório tem o objetivo de apresentar os desafios propostos pelo bootcamp Santander Cibersegurança 2025 (DIO).
 
-Para o desafio, escolhi realizar uma sala na plataforma TryHackMe. Sou usuário premium e estudo segurança ofensiva na plataforma há algum tempo. O desafio consiste em um Capture The Flag (CTF), que testa técnicas como enumeração e reconhecimento de portas com a ferramenta nmap, testes de invasão em um serviço FTP por força bruta (utilizei a ferramenta Hydra) e requisições HTTP via telnet. Observação: reiniciei a máquina do desafio algumas vezes devido a problemas técnicos, o que provocou alteração do IP do alvo em algumas ocasiões, mas isso não comprometeu a conclusão do desafio.
+Para o desafio, optei por uma sala na plataforma TryHackMe. Sou usuário premium e estudo segurança ofensiva nela há algum tempo. O exercício é um Capture The Flag (CTF) que exige técnicas como enumeração e reconhecimento de portas com nmap, força bruta em um serviço FTP com Hydra e requisições HTTP via telnet. Observação: reiniciei a máquina-alvo em algumas ocasiões por problemas técnicos, o que alterou o IP em determinadas execuções, mas isso não comprometeu a conclusão do desafio. Todos os testes foram realizados no meu ambiente local (desktop) rodando Parrot OS Security, com conexão via OpenVPN.
 
 <img width="812" height="465" alt="01" src="https://github.com/user-attachments/assets/dfba3844-dff1-45a4-a84d-1a6337abfe44" />
 <img width="1443" height="727" alt="03" src="https://github.com/user-attachments/assets/35f1e959-c463-4590-8ea2-56599044ef47" />
