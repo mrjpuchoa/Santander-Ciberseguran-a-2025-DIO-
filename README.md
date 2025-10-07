@@ -62,5 +62,9 @@ https://tryhackme.com/room/netsecchallenge?sharerId=6824bf6acd0a5c2008dfd0ca
 Para quem desejar acompanhar meu progresso na plataforma THM:
 https://tryhackme.com/p/untitled.txt
 
+<img src="https://tryhackme-badges.s3.amazonaws.com/untitled.txt.png" alt="Your Image Badge" />
+
+
+
 
 
