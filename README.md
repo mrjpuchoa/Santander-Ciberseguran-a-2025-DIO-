@@ -1,5 +1,5 @@
 # Santander Cibersegurança 2025 (DIO)
-Este repositório tem o objetivo de apresentar os desafios propostos pelo bootcamp Santander Cibersegurança 2025 (DIO).
+Este repositório tem o objetivo de apresentar o desafio proposto pelo bootcamp Santander Cibersegurança 2025 (DIO), referente ao lab project "Simulando um Ataque de Brute Force de Senhas com Medusa e Kali Linux".
 
 Para o desafio, optei por uma sala na plataforma TryHackMe. Sou usuário premium e estudo segurança ofensiva nela há algum tempo. O exercício é um Capture The Flag (CTF) que exige técnicas como enumeração e reconhecimento de portas com nmap, força bruta em um serviço FTP com Hydra e requisições HTTP via telnet. Observação: reiniciei a máquina-alvo em algumas ocasiões por problemas técnicos, o que alterou o IP em determinadas execuções, mas isso não comprometeu a conclusão do desafio. Todos os testes foram realizados no meu ambiente local (desktop) rodando Parrot OS Security, com conexão via OpenVPN.
 
